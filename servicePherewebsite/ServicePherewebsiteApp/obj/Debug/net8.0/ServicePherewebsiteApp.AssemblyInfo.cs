@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ServicePherewebsiteApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a142a0fe8f2a2b15daf1559d074456a6ee772404")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b97626beb88644803706f2bdf96668ae110bbfec")]
 [assembly: System.Reflection.AssemblyProductAttribute("ServicePherewebsiteApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ServicePherewebsiteApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
