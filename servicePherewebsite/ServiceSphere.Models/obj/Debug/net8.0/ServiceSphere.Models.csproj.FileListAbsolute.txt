@@ -1,0 +1,12 @@
+C:\Users\user\source\repos\Mokgatlam\GroupA1Servicephere\servicePherewebsite\ServiceSphere.Models\bin\Debug\net8.0\ServiceSphere.Models.deps.json
+C:\Users\user\source\repos\Mokgatlam\GroupA1Servicephere\servicePherewebsite\ServiceSphere.Models\bin\Debug\net8.0\ServiceSphere.Models.dll
+C:\Users\user\source\repos\Mokgatlam\GroupA1Servicephere\servicePherewebsite\ServiceSphere.Models\bin\Debug\net8.0\ServiceSphere.Models.pdb
+C:\Users\user\source\repos\Mokgatlam\GroupA1Servicephere\servicePherewebsite\ServiceSphere.Models\obj\Debug\net8.0\ServiceSphere.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\Mokgatlam\GroupA1Servicephere\servicePherewebsite\ServiceSphere.Models\obj\Debug\net8.0\ServiceSphere.Models.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\Mokgatlam\GroupA1Servicephere\servicePherewebsite\ServiceSphere.Models\obj\Debug\net8.0\ServiceSphere.Models.AssemblyInfo.cs
+C:\Users\user\source\repos\Mokgatlam\GroupA1Servicephere\servicePherewebsite\ServiceSphere.Models\obj\Debug\net8.0\ServiceSphere.Models.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Mokgatlam\GroupA1Servicephere\servicePherewebsite\ServiceSphere.Models\obj\Debug\net8.0\ServiceSphere.Models.sourcelink.json
+C:\Users\user\source\repos\Mokgatlam\GroupA1Servicephere\servicePherewebsite\ServiceSphere.Models\obj\Debug\net8.0\ServiceSphere.Models.dll
+C:\Users\user\source\repos\Mokgatlam\GroupA1Servicephere\servicePherewebsite\ServiceSphere.Models\obj\Debug\net8.0\refint\ServiceSphere.Models.dll
+C:\Users\user\source\repos\Mokgatlam\GroupA1Servicephere\servicePherewebsite\ServiceSphere.Models\obj\Debug\net8.0\ServiceSphere.Models.pdb
+C:\Users\user\source\repos\Mokgatlam\GroupA1Servicephere\servicePherewebsite\ServiceSphere.Models\obj\Debug\net8.0\ref\ServiceSphere.Models.dll

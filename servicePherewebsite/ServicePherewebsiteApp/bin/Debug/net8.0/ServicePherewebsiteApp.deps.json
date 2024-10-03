@@ -11,7 +11,8 @@
           "Microsoft.AspNetCore.Http": "2.2.2",
           "Microsoft.EntityFrameworkCore": "9.0.0-rc.1.24451.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0-rc.1.24451.1",
-          "Microsoft.EntityFrameworkCore.Tools": "9.0.0-rc.1.24451.1"
+          "Microsoft.EntityFrameworkCore.Tools": "9.0.0-rc.1.24451.1",
+          "Servicesphere.DataAccess": "1.0.0"
         },
         "runtime": {
           "ServicePherewebsiteApp.dll": {}
@@ -1021,6 +1022,28 @@
         "dependencies": {
           "System.Drawing.Common": "4.7.0"
         }
+      },
+      "Servicesphere.DataAccess/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http": "2.2.2",
+          "Microsoft.EntityFrameworkCore": "9.0.0-rc.1.24451.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0-rc.1.24451.1",
+          "ServiceSphere.Models": "1.0.0",
+          "ServiceSphere.Utility": "1.0.0"
+        },
+        "runtime": {
+          "Servicesphere.DataAccess.dll": {}
+        }
+      },
+      "ServiceSphere.Models/1.0.0": {
+        "runtime": {
+          "ServiceSphere.Models.dll": {}
+        }
+      },
+      "ServiceSphere.Utility/1.0.0": {
+        "runtime": {
+          "ServiceSphere.Utility.dll": {}
+        }
       }
     }
   },
@@ -1624,6 +1647,21 @@
       "sha512": "sha512-CeWTdRNfRaSh0pm2gDTJFwVaXfTq6Xwv/sA887iwPTneW7oMtMlpvDIO+U60+3GWTB7Aom6oQwv5VZVUhQRdPQ==",
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
+    },
+    "Servicesphere.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ServiceSphere.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ServiceSphere.Utility/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

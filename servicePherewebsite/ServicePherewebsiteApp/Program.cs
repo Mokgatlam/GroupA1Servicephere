@@ -1,14 +1,21 @@
 using Microsoft.EntityFrameworkCore;
-using ServicePherewebsiteApp.Data;
+//using ServicePherewebsiteApp.Services;
+using Servicesphere.DataAccess.Data;
+using Servicesphere.DataAccess.Repository;
+
+//using Servicesphere.DataAccess.Repository;
+using Servicesphere.DataAccess.Repository.IRepository;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<IServiceCategoryRepository,ServiceCategoryRepository>();
+
 builder.Services.AddDbContext<ApplicationDbContext>(options=>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
-
+//builder.Services.AddSingleton<ISingletonGuidService,SingletonGuidService>();
+//builder.Services.AddTransient<ITransientGuidService, TransientGuidService>();
 
 
 var app = builder.Build();

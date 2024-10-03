@@ -1694,6 +1694,43 @@
             "rid": "win"
           }
         }
+      },
+      "Servicesphere.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http": "2.2.2",
+          "Microsoft.EntityFrameworkCore": "9.0.0-rc.1.24451.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0-rc.1.24451.1",
+          "ServiceSphere.Models": "1.0.0",
+          "ServiceSphere.Utility": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Servicesphere.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Servicesphere.DataAccess.dll": {}
+        }
+      },
+      "ServiceSphere.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/ServiceSphere.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ServiceSphere.Models.dll": {}
+        }
+      },
+      "ServiceSphere.Utility/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/ServiceSphere.Utility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ServiceSphere.Utility.dll": {}
+        }
       }
     }
   },
@@ -4926,6 +4963,21 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Servicesphere.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../Servicesphere.DataAccess/Servicesphere.DataAccess.csproj",
+      "msbuildProject": "../Servicesphere.DataAccess/Servicesphere.DataAccess.csproj"
+    },
+    "ServiceSphere.Models/1.0.0": {
+      "type": "project",
+      "path": "../ServiceSphere.Models/ServiceSphere.Models.csproj",
+      "msbuildProject": "../ServiceSphere.Models/ServiceSphere.Models.csproj"
+    },
+    "ServiceSphere.Utility/1.0.0": {
+      "type": "project",
+      "path": "../ServiceSphere.Utility/ServiceSphere.Utility.csproj",
+      "msbuildProject": "../ServiceSphere.Utility/ServiceSphere.Utility.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4933,7 +4985,8 @@
       "Microsoft.AspNetCore.Http >= 2.2.2",
       "Microsoft.EntityFrameworkCore >= 9.0.0-rc.1.24451.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.0-rc.1.24451.1",
-      "Microsoft.EntityFrameworkCore.Tools >= 9.0.0-rc.1.24451.1"
+      "Microsoft.EntityFrameworkCore.Tools >= 9.0.0-rc.1.24451.1",
+      "Servicesphere.DataAccess >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4968,7 +5021,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\user\\source\\repos\\Mokgatlam\\GroupA1Servicephere\\servicePherewebsite\\Servicesphere.DataAccess\\Servicesphere.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\user\\source\\repos\\Mokgatlam\\GroupA1Servicephere\\servicePherewebsite\\Servicesphere.DataAccess\\Servicesphere.DataAccess.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

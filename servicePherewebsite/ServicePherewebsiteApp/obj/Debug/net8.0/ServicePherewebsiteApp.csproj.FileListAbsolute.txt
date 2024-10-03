@@ -168,3 +168,9 @@ C:\Users\user\source\repos\Mokgatlam\GroupA1Servicephere\servicePherewebsite\Ser
 C:\Users\user\source\repos\Mokgatlam\GroupA1Servicephere\servicePherewebsite\ServicePherewebsiteApp\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
 C:\Users\user\source\repos\Mokgatlam\GroupA1Servicephere\servicePherewebsite\ServicePherewebsiteApp\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\user\source\repos\Mokgatlam\GroupA1Servicephere\servicePherewebsite\ServicePherewebsiteApp\obj\Debug\net8.0\ServiceP.92A1EFB0.Up2Date
+C:\Users\user\source\repos\Mokgatlam\GroupA1Servicephere\servicePherewebsite\ServicePherewebsiteApp\bin\Debug\net8.0\Servicesphere.DataAccess.dll
+C:\Users\user\source\repos\Mokgatlam\GroupA1Servicephere\servicePherewebsite\ServicePherewebsiteApp\bin\Debug\net8.0\ServiceSphere.Models.dll
+C:\Users\user\source\repos\Mokgatlam\GroupA1Servicephere\servicePherewebsite\ServicePherewebsiteApp\bin\Debug\net8.0\ServiceSphere.Utility.dll
+C:\Users\user\source\repos\Mokgatlam\GroupA1Servicephere\servicePherewebsite\ServicePherewebsiteApp\bin\Debug\net8.0\Servicesphere.DataAccess.pdb
+C:\Users\user\source\repos\Mokgatlam\GroupA1Servicephere\servicePherewebsite\ServicePherewebsiteApp\bin\Debug\net8.0\ServiceSphere.Models.pdb
+C:\Users\user\source\repos\Mokgatlam\GroupA1Servicephere\servicePherewebsite\ServicePherewebsiteApp\bin\Debug\net8.0\ServiceSphere.Utility.pdb

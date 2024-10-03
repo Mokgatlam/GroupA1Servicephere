@@ -1,24 +1,26 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using ServicePherewebsiteApp.Data;
-using ServicePherewebsiteApp.Models;
+using Servicesphere.DataAccess.Data;
+using Servicesphere.DataAccess.Repository.IRepository;
+using ServiceSphere.Models;
+
 
 namespace ServicePherewebsiteApp.Controllers
 {
     public class ServiceCategoryController : Controller
     {
-        private readonly ApplicationDbContext _db;
-        public ServiceCategoryController(ApplicationDbContext db)
+        private readonly IServiceCategoryRepository _serviceCategoryRepo;
+        public ServiceCategoryController(IServiceCategoryRepository db)
         {
             //constructor
-            _db = db;
+            _serviceCategoryRepo = db;
         }
 
         // index action to display all categories
         public IActionResult Index()
         {
-            List<ServiceCategory> objServiceCategoryList = _db.Service_Categories.ToList();
+            List<ServiceCategory> objServiceCategoryList = _serviceCategoryRepo.GetAll().ToList();
             return View(objServiceCategoryList);
         }
 
@@ -52,8 +54,8 @@ namespace ServicePherewebsiteApp.Controllers
             if (ModelState.IsValid) {
                 // Add the Category object to the database
 
-                _db.Service_Categories.Add(obj);
-                _db.SaveChanges();
+                _serviceCategoryRepo.Add(obj);
+                _serviceCategoryRepo.Save();
                 TempData["success"] = "Service Category created successfully";
                 return RedirectToAction("Index");
             }
@@ -77,7 +79,9 @@ namespace ServicePherewebsiteApp.Controllers
                 return NotFound();
             }
 
-            ServiceCategory serviceCategoryFromDb=_db.Service_Categories.Find(id);
+            ServiceCategory? serviceCategoryFromDb=_serviceCategoryRepo.Get(u=>u.CategoryId==id);
+            //ServiceCategory? serviceCategoryFromDb=_db.Service_Categories.FirstOrDefault(u=>u.CategoryId==id);
+            //ServiceCategory? serviceCategoryFromDb=_db.Service_Categories.Where(u=>u.CategoryId==id).FirstOrDefault(u=>u.CategoryId==id);
             if (serviceCategoryFromDb == null) { 
                 return NotFound();
             
@@ -101,8 +105,8 @@ namespace ServicePherewebsiteApp.Controllers
             {
                 // Add the Category object to the database
 
-                _db.Service_Categories.Update(obj);
-                _db.SaveChanges();
+                _serviceCategoryRepo.Update(obj);
+                _serviceCategoryRepo.Save();
                 TempData["success"] = "Service Category updated successfully";
                 return RedirectToAction("Index");
             }
@@ -126,7 +130,8 @@ namespace ServicePherewebsiteApp.Controllers
                 return NotFound();
             }
 
-            ServiceCategory serviceCategoryFromDb = _db.Service_Categories.Find(id);
+            ServiceCategory? serviceCategoryFromDb = _serviceCategoryRepo.Get(u => u.CategoryId == id);
+           
             if (serviceCategoryFromDb == null)
             {
                 return NotFound();
@@ -144,12 +149,12 @@ namespace ServicePherewebsiteApp.Controllers
         public IActionResult DeletePOST(int? id)
         {
             // the Category object to the database
-            ServiceCategory? obj = _db.Service_Categories.Find(id);
+            ServiceCategory? obj = _serviceCategoryRepo.Get(u => u.CategoryId == id);
 
             if (obj==null)
                 { return NotFound(); }
-            _db.Service_Categories.Remove(obj);
-            _db.SaveChanges();
+            _serviceCategoryRepo.Remove(obj);
+            _serviceCategoryRepo.Save();
             TempData["success"] = "Service Category deleted successfully";
             return RedirectToAction("Index");
          
