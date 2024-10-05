@@ -22,15 +22,11 @@ namespace Servicesphere.DataAccess.Repository
 
         }
 
-        public void Save()
-        {
-            // save canges  query
-            _db.SaveChanges();
-        }
+   
 
         public void Update(ServiceCategory obj)
         {
-            // update quer
+            // update query
             _db.Service_Categories.Update(obj);
         }
     }

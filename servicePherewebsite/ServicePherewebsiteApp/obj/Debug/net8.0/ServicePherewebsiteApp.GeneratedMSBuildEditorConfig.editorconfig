@@ -26,28 +26,68 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\user\source\repos\Mokgatlam\GroupA1Servicephere\servicePherewebsite\ServicePherewebsiteApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/user/source/repos/Mokgatlam/GroupA1Servicephere/servicePherewebsite/ServicePherewebsiteApp/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Users/user/source/repos/Mokgatlam/GroupA1Servicephere/servicePherewebsite/ServicePherewebsiteApp/Areas/Admin/Views/ServiceCategory/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2VydmljZUNhdGVnb3J5XENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/source/repos/Mokgatlam/GroupA1Servicephere/servicePherewebsite/ServicePherewebsiteApp/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/user/source/repos/Mokgatlam/GroupA1Servicephere/servicePherewebsite/ServicePherewebsiteApp/Areas/Admin/Views/ServiceCategory/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2VydmljZUNhdGVnb3J5XERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/source/repos/Mokgatlam/GroupA1Servicephere/servicePherewebsite/ServicePherewebsiteApp/Views/ServiceCategory/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZUNhdGVnb3J5XENyZWF0ZS5jc2h0bWw=
+[C:/Users/user/source/repos/Mokgatlam/GroupA1Servicephere/servicePherewebsite/ServicePherewebsiteApp/Areas/Admin/Views/ServiceCategory/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2VydmljZUNhdGVnb3J5XEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/source/repos/Mokgatlam/GroupA1Servicephere/servicePherewebsite/ServicePherewebsiteApp/Views/ServiceCategory/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZUNhdGVnb3J5XERlbGV0ZS5jc2h0bWw=
+[C:/Users/user/source/repos/Mokgatlam/GroupA1Servicephere/servicePherewebsite/ServicePherewebsiteApp/Areas/Admin/Views/ServiceCategory/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2VydmljZUNhdGVnb3J5XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/source/repos/Mokgatlam/GroupA1Servicephere/servicePherewebsite/ServicePherewebsiteApp/Views/ServiceCategory/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZUNhdGVnb3J5XEVkaXQuY3NodG1s
+[C:/Users/user/source/repos/Mokgatlam/GroupA1Servicephere/servicePherewebsite/ServicePherewebsiteApp/Areas/Admin/Views/ServiceProduct/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2VydmljZVByb2R1Y3RcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/source/repos/Mokgatlam/GroupA1Servicephere/servicePherewebsite/ServicePherewebsiteApp/Views/ServiceCategory/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZUNhdGVnb3J5XEluZGV4LmNzaHRtbA==
+[C:/Users/user/source/repos/Mokgatlam/GroupA1Servicephere/servicePherewebsite/ServicePherewebsiteApp/Areas/Admin/Views/ServiceProduct/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2VydmljZVByb2R1Y3RcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/Mokgatlam/GroupA1Servicephere/servicePherewebsite/ServicePherewebsiteApp/Areas/Admin/Views/ServiceProduct/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2VydmljZVByb2R1Y3RcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/Mokgatlam/GroupA1Servicephere/servicePherewebsite/ServicePherewebsiteApp/Areas/Admin/Views/ServiceProduct/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2VydmljZVByb2R1Y3RcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/Mokgatlam/GroupA1Servicephere/servicePherewebsite/ServicePherewebsiteApp/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/Mokgatlam/GroupA1Servicephere/servicePherewebsite/ServicePherewebsiteApp/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/Mokgatlam/GroupA1Servicephere/servicePherewebsite/ServicePherewebsiteApp/Areas/Customer/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/Mokgatlam/GroupA1Servicephere/servicePherewebsite/ServicePherewebsiteApp/Areas/Customer/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/Mokgatlam/GroupA1Servicephere/servicePherewebsite/ServicePherewebsiteApp/Areas/Customer/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/Mokgatlam/GroupA1Servicephere/servicePherewebsite/ServicePherewebsiteApp/Areas/Customer/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/Mokgatlam/GroupA1Servicephere/servicePherewebsite/ServicePherewebsiteApp/Areas/ServiceProviderUser/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2VydmljZVByb3ZpZGVyVXNlclxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/Mokgatlam/GroupA1Servicephere/servicePherewebsite/ServicePherewebsiteApp/Areas/ServiceProviderUser/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2VydmljZVByb3ZpZGVyVXNlclxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/user/source/repos/Mokgatlam/GroupA1Servicephere/servicePherewebsite/ServicePherewebsiteApp/Views/Shared/Error.cshtml]

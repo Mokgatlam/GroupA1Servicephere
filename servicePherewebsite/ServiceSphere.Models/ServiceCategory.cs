@@ -12,7 +12,7 @@ namespace ServiceSphere.Models
         [DisplayName("Category Name")]
         public string Name { get; set; }
         [Required(ErrorMessage = "Category Description is required.")]
-        [MaxLength(400, ErrorMessage = "Category Description cannot be longer than 50 characters.")]
+        [MaxLength(500, ErrorMessage = "Category Description cannot be longer than 500 characters.")]
         [DisplayName("Category Description")]
         public string Description { get; set; }
 

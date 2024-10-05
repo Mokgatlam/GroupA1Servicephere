@@ -11,7 +11,7 @@ namespace Servicesphere.DataAccess.Repository.IRepository
     {
 
         void Update(ServiceCategory obj);
-        void Save();
+       
 
     }
 }
