@@ -10,3 +10,4 @@ C:\Users\user\source\repos\Mokgatlam\GroupA1Servicephere\servicePherewebsite\Ser
 C:\Users\user\source\repos\Mokgatlam\GroupA1Servicephere\servicePherewebsite\ServiceSphere.Models\obj\Debug\net8.0\refint\ServiceSphere.Models.dll
 C:\Users\user\source\repos\Mokgatlam\GroupA1Servicephere\servicePherewebsite\ServiceSphere.Models\obj\Debug\net8.0\ServiceSphere.Models.pdb
 C:\Users\user\source\repos\Mokgatlam\GroupA1Servicephere\servicePherewebsite\ServiceSphere.Models\obj\Debug\net8.0\ref\ServiceSphere.Models.dll
+C:\Users\user\source\repos\Mokgatlam\GroupA1Servicephere\servicePherewebsite\ServiceSphere.Models\obj\Debug\net8.0\ServiceSphere.Models.csproj.AssemblyReference.cache
