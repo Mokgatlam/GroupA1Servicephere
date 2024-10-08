@@ -1,6 +1,22 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\user\\.nuget\\packages\\datatables.net-dt\\2.1.8\\contentFiles\\any\\any\\wwwroot\\css\\dataTables.dataTables.css",
+      "PackagePath": "staticwebassets\\css\\dataTables.dataTables.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\.nuget\\packages\\datatables.net-dt\\2.1.8\\contentFiles\\any\\any\\wwwroot\\css\\dataTables.dataTables.min.css",
+      "PackagePath": "staticwebassets\\css\\dataTables.dataTables.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\.nuget\\packages\\datatables.net-dt\\2.1.8\\contentFiles\\any\\any\\wwwroot\\js\\dataTables.dataTables.js",
+      "PackagePath": "staticwebassets\\js\\dataTables.dataTables.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\.nuget\\packages\\datatables.net-dt\\2.1.8\\contentFiles\\any\\any\\wwwroot\\js\\dataTables.dataTables.min.js",
+      "PackagePath": "staticwebassets\\js\\dataTables.dataTables.min.js"
+    },
+    {
       "Id": "C:\\Users\\user\\source\\repos\\Mokgatlam\\GroupA1Servicephere\\servicePherewebsite\\ServicePherewebsiteApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ServicePherewebsiteApp.bundle.scp.css",
       "PackagePath": "staticwebassets\\ServicePherewebsiteApp.bundle.scp.css"
     },
@@ -11,6 +27,34 @@
     {
       "Id": "C:\\Users\\user\\source\\repos\\Mokgatlam\\GroupA1Servicephere\\servicePherewebsite\\ServicePherewebsiteApp\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Mokgatlam\\GroupA1Servicephere\\servicePherewebsite\\ServicePherewebsiteApp\\wwwroot\\images\\serviceListings\\51dc341d-9887-4ba6-8284-621e90f1112f.png",
+      "PackagePath": "staticwebassets\\images\\serviceListings\\51dc341d-9887-4ba6-8284-621e90f1112f.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Mokgatlam\\GroupA1Servicephere\\servicePherewebsite\\ServicePherewebsiteApp\\wwwroot\\images\\serviceListings\\64093657-6408-4eba-9fba-01904fcc9024.jpg",
+      "PackagePath": "staticwebassets\\images\\serviceListings\\64093657-6408-4eba-9fba-01904fcc9024.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Mokgatlam\\GroupA1Servicephere\\servicePherewebsite\\ServicePherewebsiteApp\\wwwroot\\images\\serviceListings\\7aecbe3b-a1b7-48f9-b4b4-6d7729523da7.jpg",
+      "PackagePath": "staticwebassets\\images\\serviceListings\\7aecbe3b-a1b7-48f9-b4b4-6d7729523da7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Mokgatlam\\GroupA1Servicephere\\servicePherewebsite\\ServicePherewebsiteApp\\wwwroot\\images\\serviceListings\\8530d611-88a3-4d6b-a287-73b5dab4c390.jpeg",
+      "PackagePath": "staticwebassets\\images\\serviceListings\\8530d611-88a3-4d6b-a287-73b5dab4c390.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Mokgatlam\\GroupA1Servicephere\\servicePherewebsite\\ServicePherewebsiteApp\\wwwroot\\images\\serviceListings\\8850da7e-be96-4b18-941e-be7dcaf914c7.jpg",
+      "PackagePath": "staticwebassets\\images\\serviceListings\\8850da7e-be96-4b18-941e-be7dcaf914c7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Mokgatlam\\GroupA1Servicephere\\servicePherewebsite\\ServicePherewebsiteApp\\wwwroot\\images\\serviceListings\\92be4d93-6907-4a8d-989b-ca25fc066a51.jpg",
+      "PackagePath": "staticwebassets\\images\\serviceListings\\92be4d93-6907-4a8d-989b-ca25fc066a51.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Mokgatlam\\GroupA1Servicephere\\servicePherewebsite\\ServicePherewebsiteApp\\wwwroot\\js\\ServiceProduct.js",
+      "PackagePath": "staticwebassets\\js\\ServiceProduct.js"
     },
     {
       "Id": "C:\\Users\\user\\source\\repos\\Mokgatlam\\GroupA1Servicephere\\servicePherewebsite\\ServicePherewebsiteApp\\wwwroot\\js\\site.js",

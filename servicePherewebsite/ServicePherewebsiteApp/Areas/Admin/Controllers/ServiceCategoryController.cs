@@ -1,14 +1,17 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Servicesphere.DataAccess.Data;
 using Servicesphere.DataAccess.Repository.IRepository;
 using ServiceSphere.Models;
+using ServiceSphere.Utility;
 
 
 namespace ServicePherewebsiteApp.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = SD.Role_Admin)]
     public class ServiceCategoryController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;

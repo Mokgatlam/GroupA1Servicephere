@@ -1,0 +1,103 @@
+﻿@model ServiceProduct
+@using System.Globalization
+
+
+<form method="post">
+    <div class="card shadow border-0 mt-4">
+        <!-- Service Header -->
+        <div class="card-header bg-secondary bg-gradient text-light py-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3 class="text-white text-uppercase">@Model.Name</h3>
+                    <p class="text-white-50 fw-semibold mb-0">by service ProviderName</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service Body -->
+        <div class="card-body">
+            <div class="py-3">
+                <!-- Navigation back to home -->
+                <div class="row">
+                    <div class="col-6 col-md-2 offset-lg-1 pb-1">
+                        <a href="/" class="btn btn-outline-primary bg-gradient mb-5 fw-semibold btn-sm text-uppercase">
+                            <small>Back to home</small>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- Image Section -->
+                    <div class="col-12 col-lg-4 text-center mb-3">
+                        <img src="@Model.ImageUrls" class="card-img-top rounded" />
+                    </div>
+
+                    <!-- Service Details Section -->
+                    <div class="col-12 col-lg-7">
+                        <!-- Category -->
+                        <div class="mb-3">
+                            <span class="badge bg-primary text-white">@Model.Category.Name</span>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="mb-2">
+                            <h6 class="text-dark text-opacity-75">Location: <span>@Model.Location</span></h6>
+                        </div>
+
+                        <!-- Description -->
+                        <div class="mb-3">
+                            <h6 class="text-dark text-opacity-75">Description: </h6>
+                            <p class="text-secondary lh-sm">@Model.Description</p>
+                        </div>
+
+                        <!--Price-->
+                        <div class="mb-3">
+                            <h6 class="text-dark text-opacity-75">Price: </h6>
+                            <span> @Model.Price.ToString("c", new CultureInfo("en-ZA"))</span>
+                        </div>
+
+                        <!-- Additional Service Information -->
+                        <div class="mb-4">
+                            <p class="text-secondary lh-sm">Service Information: Detailed info about the service offered by ProviderName.</p>
+                        </div>
+
+                        <!-- Quantity Selector -->
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="isVerified" name="isVerified" @if (Model.IsVerified)
+                            {
+                                <text>checked</text>
+                            } readonly/>
+                            <label class="form-check-label" for="isVerified">
+                                Verified
+                            </label>
+                        </div>
+                       
+
+                        <!-- Book and Chat Buttons -->
+                        <div class="row">
+                            <div class="col-12 col-md-6 pb-2">
+                                <button type="button" class="btn btn-success bg-gradient w-100 py-2 text-uppercase fw-semibold">
+                                    Book Service
+                                </button>
+                            </div>
+                            <div class="col-12 col-md-6 pb-1">
+                                <button type="button" class="btn btn-info bg-gradient w-100 py-2 text-uppercase fw-semibold">
+                                    Chat with Service Provider
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Add to Cart Button (Disabled) -->
+                        <div class="row">
+                            <div class="col-12 col-md-6 pb-1 mt-3">
+                                <button type="submit" disabled class="btn btn-primary bg-gradient w-100 py-2 text-uppercase fw-semibold">
+                                    Add to Cart (Coming Soon...)
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

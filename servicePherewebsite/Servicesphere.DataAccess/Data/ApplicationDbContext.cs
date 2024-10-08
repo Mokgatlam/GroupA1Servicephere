@@ -1,27 +1,32 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using ServiceSphere.Models;
 
 
 
 namespace Servicesphere.DataAccess.Data
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<IdentityUser>
     {
         // basic configuration
-       
 
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext>options): base(options) 
+
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
             // constructor
             // 
 
         }
 
-        public DbSet<ServiceCategory> Service_Categories { get; set;}
+        public DbSet<ServiceCategory> Service_Categories { get; set; }
         public DbSet<ServiceProduct> Service_Products { get; set; }
+        public DbSet<ApplicationUser>ApplicationUsers{ get; set; }
 
          protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+
             modelBuilder.Entity<ServiceCategory>().HasData(
                   new ServiceCategory { CategoryId = 1, Name = "Beauty & Personal Care", Description = "personal grooming and beauty,hair styling, manicures, pedicures, and makeup services.", CreatedAt = DateTime.Parse("2024-10-01 14:30:00") },
                   new ServiceCategory { CategoryId = 2, Name = "Electrical", Description = "Services for electrical installations, repairs, and maintenance, such as fixing electrical faults, installing new wiring, and setting up lighting systems.", CreatedAt = DateTime.Parse("2024-10-01 14:30:00") },

@@ -5,11 +5,11 @@ VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServicePherewebsiteApp", "ServicePherewebsiteApp.csproj", "{FD219E47-FB58-4E7E-8D46-5B9D2A5038D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servicesphere.DataAccess", "..\Servicesphere.DataAccess\Servicesphere.DataAccess.csproj", "{297D6283-F47F-46B8-9994-E37D1C82D7ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Servicesphere.DataAccess", "..\Servicesphere.DataAccess\Servicesphere.DataAccess.csproj", "{297D6283-F47F-46B8-9994-E37D1C82D7ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceSphere.Models", "..\ServiceSphere.Models\ServiceSphere.Models.csproj", "{FFD4AF7B-9C22-4920-82C3-657F03C5B849}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceSphere.Models", "..\ServiceSphere.Models\ServiceSphere.Models.csproj", "{FFD4AF7B-9C22-4920-82C3-657F03C5B849}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceSphere.Utility", "..\ServiceSphere.Utility\ServiceSphere.Utility.csproj", "{715528D1-6887-487C-90A3-DB110A274757}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceSphere.Utility", "..\ServiceSphere.Utility\ServiceSphere.Utility.csproj", "{715528D1-6887-487C-90A3-DB110A274757}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

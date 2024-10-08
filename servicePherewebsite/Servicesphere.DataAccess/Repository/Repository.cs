@@ -21,6 +21,8 @@ namespace Servicesphere.DataAccess.Repository
             _db =db;
             this.dbSet = _db.Set<T>();
             //_db.ServiceCategory ==dbSet
+            _db.Service_Products.Include(u => u.Category).Include(u=>u.CategoryId);
+
             // _db.ServiceCategory.Add()
             // Now - dbSet.Add()
 
@@ -34,22 +36,88 @@ namespace Servicesphere.DataAccess.Repository
            
         }
 
-        public T Get(Expression<Func<T, bool>> filter)
+        //public T Get(Expression<Func<T, bool>> filter, string? includeProperties = null)
+        //{
+        //    // our query using a where condition
+        //    //on our search we want the first or default  method
+        //   // same =ServiceCategory? serviceCategoryFromDb=_db.Service_Categories.Where(u=>u.CategoryId==id).FirstOrDefault(u=>u.CategoryId==id);
+        //    IQueryable<T> query = dbSet;
+        //    query = query.Where(filter);
+        //    if (!string.IsNullOrEmpty(includeProperties))
+        //    {
+        //        foreach (var includeProp in includeProperties.
+        //           Split(new char[] {','}, StringSplitOptions.RemoveEmptyEntries))
+        //        {
+        //            query = query.Include(includeProp);
+
+        //        }
+
+        //    }
+        //    return query.FirstOrDefault();
+        //}
+
+        public T Get(Expression<Func<T, bool>> filter, string? includeProperties = null)
         {
             // our query using a where condition
-            //on our serch we want the first or default  method
-           // same =ServiceCategory? serviceCategoryFromDb=_db.Service_Categories.Where(u=>u.CategoryId==id).FirstOrDefault(u=>u.CategoryId==id);
+            //on our search we want the first or default  method
+            // same =ServiceCategory? serviceCategoryFromDb=_db.Service_Categories.Where(u=>u.CategoryId==id).FirstOrDefault(u=>u.CategoryId==id);
             IQueryable<T> query = dbSet;
-            query =query.Where(filter);
+            query = query.Where(filter);
+            if (!string.IsNullOrEmpty(includeProperties))
+            {
+                foreach (var includeProp in includeProperties.
+                   Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query = query.Include(includeProp);
+
+                }
+
+            }
             return query.FirstOrDefault();
         }
 
-        public IEnumerable<T> GetAll()
+        public T Get(Expression<Func<T, bool>> filter)
+        {
+            return dbSet.FirstOrDefault(filter);
+        }
+
+
+
+
+
+        //Category,Categorytype
+        public IEnumerable<T> GetAll(string? includeProperties = null, int pageNumber = 1, int pageSize = 10)
         {
 
             // Select all condition /Query
             IQueryable<T> query = dbSet;
-            return query.ToList();
+            if (!string.IsNullOrEmpty(includeProperties))
+            {
+                foreach (var includeProp in includeProperties
+                    .Split(new char[] {','}, StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query=query.Include(includeProp);
+                
+                }  
+            
+            }
+            return query.Skip((pageNumber - 1) * pageSize).Take(pageSize).ToList();
+        }
+
+        public IEnumerable<T> GetAll(string? includeProperties = null)
+        {
+            IQueryable<T> query = dbSet;
+
+            if (!string.IsNullOrEmpty(includeProperties))
+            {
+                foreach (var includeProp in includeProperties
+                    .Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query = query.Include(includeProp);
+                }
+            }
+
+            return query.AsNoTracking().ToList(); // Return
         }
 
         public void Remove(T entity)

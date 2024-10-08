@@ -1,0 +1,171 @@
+﻿@model ServiceProductVM 
+
+<div class="card shadow border-0 my-4  ">
+
+    <div class="card-header bg-secondary bg-gradient mt-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-white py-2"> @(Model.ServiceProduct.SProductId!= 0?"Update":"Create") Service Listing</h2>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="card-body p-4">
+        <form method="post" class="row" enctype="multipart/form-data">
+            @if (TempData["Success"] != null)
+            {
+                <div class="alert alert-success">@TempData["Success"]</div>
+            }
+            @if (TempData["Error"] != null)
+            {
+                <div class="alert alert-danger">@TempData["Error"]</div>
+            }
+
+            <input asp-for="ServiceProduct.SProductId" hidden />
+            <input asp-for="ServiceProduct.ImageUrls" hidden/>
+
+            <div class="col-10">
+
+
+                
+                <div class="border p-3 ">
+
+
+                    <div asp-validation-summary="ModelOnly" class="text-danger">
+                    </div>
+
+                    <div class="mb-3 row p-1">
+                        <label asp-for="ServiceProduct.Name" class="form-label p-0"></label>
+                        <input type="text" class="form-control" asp-for="ServiceProduct.Name" placeholder="Enter the Service  Name" />
+                        <span asp-validation-for="ServiceProduct.Name" class="text-danger"></span>
+
+                    </div>
+
+                    <div class="mb-3 row p-1">
+                        <label asp-for="ServiceProduct.CategoryId" class="form-label p-0"></label>
+                        <select class="form-select" asp-items="@Model.ServiceCategoryList" asp-for="ServiceProduct.CategoryId">
+                            <option disabled selected>--Select Category--</option>
+                        </select>
+                        <span asp-validation-for="ServiceProduct.CategoryId" class="text-danger"></span>
+
+                    </div>
+
+                    <div class="mb-3 row p-1">
+                        <label asp-for="ServiceProduct.Description" class="form-label p-0"></label>
+                        <textarea type="text" class="form-control" asp-for="ServiceProduct.Description" placeholder="Enter the Service Description"></textarea>
+                        <span asp-validation-for="ServiceProduct.Description" class="text-danger"></span>
+
+                    </div>
+
+                    <div class="mb-3 row p-1">
+                        <label asp-for="ServiceProduct.Price" class="form-label p-0"></label>
+                        <input type="number" class="form-control" asp-for="ServiceProduct.Price" placeholder="Enter the Price for Service" />
+                        <span asp-validation-for="ServiceProduct.Price" class="text-danger"></span>
+
+                    </div>
+
+                    <div class="mb-3 row p-1">
+                        <label asp-for="ServiceProduct.Location" class="form-label p-0"></label>
+                        <input type="text" class="form-control" asp-for="ServiceProduct.Location" placeholder="Enter the your Location" />
+                        <span asp-validation-for="ServiceProduct.Location" class="text-danger"></span>
+
+                    </div>
+
+                    <div class="mb-3 row p-1">
+                        <label asp-for="ServiceProduct.ImageUrls" class="form-label p-0"></label>
+                        <input type="file" name="file" class="form-control" asp-for="ServiceProduct.ImageUrls" placeholder="upload your images" />
+                        <span asp-validation-for="ServiceProduct.ImageUrls" class="text-danger"></span>
+
+                    </div>
+                    <div class="mb-3 row p-1">
+                        <label asp-for="ServiceProduct.IsActive" class="form-label p-0"></label>
+                        <input type="checkbox" class="form-check-input" asp-for="ServiceProduct.IsActive"  />
+                        <span asp-validation-for="ServiceProduct.IsActive" class="text-danger"></span>
+
+                    </div>
+
+
+
+                    <div class="mb-3 row p-1">
+                        <label asp-for="ServiceProduct.CreatedAt" class="form-label p-0"></label>
+                        <input type="datetime-local" class="form-control" asp-for="ServiceProduct.CreatedAt" value="@Model.ServiceProduct.CreatedAt.ToString("yyyy-MM-ddTHH:mm:ss")" readonly />
+                       
+
+                        <div class="mb-3 row p-1">
+                            <label asp-for="ServiceProduct.UpdatedAt" class="form-label p-0"></label>
+                            <input type="datetime-local" class="form-control" asp-for="ServiceProduct.UpdatedAt" value="@Model.ServiceProduct.UpdatedAt?.ToString("yyyy-MM-ddTHH:mm:ss")??string.Empty" readonly />
+                           
+
+                        </div>
+                        <div class="row">
+                            <div class="col-6 col-md-3 my-2">
+                                @if (Model.ServiceProduct.SProductId != 0)
+
+                                {
+                                    <button type="submit" class="btn btn-primary form-control">Update</button>
+                                }
+                                else
+                                {
+                                    <button type="submit" class="btn btn-primary form-control">Create</button>
+                                }
+
+
+                            </div>
+                            <div class="col-6 col-md-3 my-2">
+                                <a asp-controller="ServiceProduct" asp-action="Index" class="btn btn-secondary border form-control">
+                                    Back to List
+                                </a>
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+                 <div class="col-2">
+                     <img src="@Model.ServiceProduct.ImageUrls" width="100%" class="img-fluid" />
+
+                     </div>
+           
+        </form>
+    </div>
+</div>
+
+
+
+        @section Scripts{
+    <script>
+        tinymce.init({
+            selector: 'textarea',
+            plugins: [
+                // Core editing features
+                'anchor', 'autolink', 'charmap', 'codesample', 'emoticons', 'image', 'link', 'lists', 'media', 'searchreplace', 'table', 'visualblocks', 'wordcount',
+                // Your account includes a free trial of TinyMCE premium features
+                // Try the most popular premium features until Oct 20, 2024:
+                'checklist', 'mediaembed', 'casechange', 'export', 'formatpainter', 'pageembed', 'a11ychecker', 'tinymcespellchecker', 'permanentpen', 'powerpaste', 'advtable', 'advcode', 'editimage', 'advtemplate', 'ai', 'mentions', 'tinycomments', 'tableofcontents', 'footnotes', 'mergetags', 'autocorrect', 'typography', 'inlinecss', 'markdown',
+            ],
+            selector: '#ServiceDescriptionEditor',
+            toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+            tinycomments_mode: 'embedded',
+            tinycomments_author: 'Author name',
+            mergetags_list: [
+                { value: 'First.Name', title: 'First Name' },
+                { value: 'Email', title: 'Email' },
+            ],
+            ai_request: (request, respondWith) => respondWith.string(() => Promise.reject('See docs to implement AI Assistant')),
+        });
+    </script>
+        
+            @{
+                 <partial name="_ValidationScriptsPartial"/>
+                
+            }
+        }

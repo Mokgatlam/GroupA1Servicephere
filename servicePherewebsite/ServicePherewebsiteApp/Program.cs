@@ -5,6 +5,9 @@ using Servicesphere.DataAccess.Repository;
 
 //using Servicesphere.DataAccess.Repository;
 using Servicesphere.DataAccess.Repository.IRepository;
+using Microsoft.AspNetCore.Identity;
+using ServiceSphere.Utility;
+using Microsoft.AspNetCore.Identity.UI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,8 +17,19 @@ builder.Services.AddScoped<IUnitOfWork,UnitOfWork>();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options=>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
+builder.Services.AddRazorPages();
+builder.Services.AddScoped<IEmailSender,EmailSender>();
 //builder.Services.AddSingleton<ISingletonGuidService,SingletonGuidService>();
 //builder.Services.AddTransient<ITransientGuidService, TransientGuidService>();
+
+//access cookies 
+builder.Services.ConfigureApplicationCookie( options=> {
+    options.LoginPath = $"/Identity/Account/Login";
+    options.LogoutPath = $"/Identity/Account/Logout";
+    options.AccessDeniedPath = $"/Identity/Account/AccessDenied";
+});
 
 
 var app = builder.Build();
@@ -32,8 +46,11 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+app.UseAuthentication();
 
 app.UseAuthorization();
+
+app.MapRazorPages();
 
 app.MapControllerRoute(
     name: "default",
