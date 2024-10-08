@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Servicesphere.DataAccess.Repository.IRepository;
 using ServiceSphere.Models;
 using System.Diagnostics;
 
@@ -9,15 +10,24 @@ namespace ServicePherewebsiteApp.Areas.Customer.Controllers
     {
 
         private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private readonly IUnitOfWork _unitOfWork;
+        public HomeController(ILogger<HomeController> logger,IUnitOfWork unitOfWork )
         {
             _logger = logger;
+            _unitOfWork = unitOfWork;
+           
         }
 
         public IActionResult Index()
+        {   
+            IEnumerable<ServiceProduct> serviceProductList =_unitOfWork.ServiceProduct.GetAll(includeProperties:"Category");
+            return View(serviceProductList);
+        }
+
+        public IActionResult Details(int serviceProductId)
         {
-            return View();
+            ServiceProduct serviceProductList = _unitOfWork.ServiceProduct.Get(u=>u.SProductId==serviceProductId,includeProperties:"Category");
+            return View(serviceProductList);
         }
 
         public IActionResult Privacy()

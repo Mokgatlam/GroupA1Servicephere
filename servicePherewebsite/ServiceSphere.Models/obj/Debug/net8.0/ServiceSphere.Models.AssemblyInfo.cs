@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ServiceSphere.Models")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+392537a7a094406e522ae01b9460d3c287c0a998")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+73d7d51c3e0bbf863fea7364b54fb276fa840a76")]
 [assembly: System.Reflection.AssemblyProductAttribute("ServiceSphere.Models")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ServiceSphere.Models")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

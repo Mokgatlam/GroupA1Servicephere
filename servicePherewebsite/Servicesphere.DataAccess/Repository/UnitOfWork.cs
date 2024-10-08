@@ -29,7 +29,7 @@ namespace Servicesphere.DataAccess.Repository
         public void Save()
         {
 
-            // save canges  query
+            // save changes  query
             _db.SaveChanges();
         }
     }

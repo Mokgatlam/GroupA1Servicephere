@@ -33,7 +33,7 @@ namespace ServiceSphere.Models
         public int CategoryId { get; set; }
         [ForeignKey("CategoryId")]
         [ValidateNever]
-        public virtual ServiceCategory Category { get; set; }
+        public ServiceCategory Category { get; set; }
         
         
 
@@ -49,15 +49,17 @@ namespace ServiceSphere.Models
 
         [DisplayName("Location")]
         [MaxLength(200, ErrorMessage = "Location cannot be longer than 200 characters.")]
-        public string Location { get; set; }
+        public string? Location { get; set; }
 
         [DisplayName("Is Verified")]
         public bool IsVerified { get; set; } = false; // Default to false until verification
 
         [DisplayName("Images")]
         [ValidateNever]
-        public string ImageUrls { get; set; } // This could store a comma-separated list of image URLs
+        public string? ImageUrls { get; set; } // This could store a comma-separated list of image URLs
 
+        [NotMapped]
+        public string CategoryName => Category != null ? Category.Name : "No Category";
 
 
         // Constructor to set default values
@@ -65,6 +67,9 @@ namespace ServiceSphere.Models
         {
             CreatedAt = DateTime.Now;
             UpdatedAt = DateTime.Now;
+           
+              // Initialize with a default value
+
         }
 
        
@@ -74,6 +79,7 @@ namespace ServiceSphere.Models
         {
             this.IsActive = false;
             this.UpdatedAt = DateTime.Now;
+
         }
 
         public void VerifyServiceProduct()
